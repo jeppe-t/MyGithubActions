@@ -1,9 +1,6 @@
 name: Google Java Format
 
-on:
-  push:
-    branches:
-      - dev
+on: push
 
   pull_request:
     branches:
