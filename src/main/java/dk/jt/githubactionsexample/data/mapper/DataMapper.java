@@ -9,17 +9,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class DataMapper implements CommandLineRunner {
 
-    @Autowired CustomerRepository customerRepository;
+  @Autowired CustomerRepository customerRepository;
 
-    @Override
-    public void run(String... args) throws Exception {
+  @Override
+  public void run(String... args) throws Exception {
 
-        //Autowire some code here
+    // Autowire some code here
 
-        Userz userz = new Userz();
-        userz.setName("Testuser");
-        customerRepository.save(userz);
-
-
-    }
+    Userz userz = new Userz();
+    userz.setName("Testuser");
+    customerRepository.save(userz);
+  }
 }
