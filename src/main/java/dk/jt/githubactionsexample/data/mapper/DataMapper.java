@@ -20,6 +20,9 @@ public class DataMapper implements CommandLineRunner {
         userz.setName("Testuser");
         customerRepository.save(userz);
 
+        //Applied some changes here
+                    System.out.println("This is bad code style:-D");
+
 
     }
 }
